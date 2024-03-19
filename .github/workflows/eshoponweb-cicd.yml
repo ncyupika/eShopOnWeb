@@ -5,7 +5,7 @@ on: [push, workflow_dispatch]
 
 #Environment variables https://docs.github.com/en/actions/learn-github-actions/environment-variables
 env:
-  RESOURCE-GROUP: rg-eShopOnWeb-sywu #Replace NAME in RESOURCE-GROUP variable. It should be the same resource group created in previous steps.
+  RESOURCE-GROUP: rg-eShopOnWeb-sywu # rg-eShopOnWeb-NAME --> Replace NAME in RESOURCE-GROUP variable. It should be the same resource group created in previous steps.
   LOCATION: eastus
   TEMPLATE-FILE: infra/webapp.bicep
   SUBSCRIPTION-ID: 20fdf1d5-cdfb-45c6-8ace-aa968eed8870 # Replace YOUR-SUBS-ID in SUBSCRIPTION-ID.

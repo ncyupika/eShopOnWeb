@@ -1,15 +1,15 @@
 name: eShopOnWeb Build and Test
 
 #Triggers (uncomment line below to use it)
-#on: [push, workflow_dispatch]
+on: [push, workflow_dispatch]
 
 #Environment variables https://docs.github.com/en/actions/learn-github-actions/environment-variables
 env:
-  RESOURCE-GROUP: rg-eshoponweb-NAME
-  LOCATION: westeurope
+  RESOURCE-GROUP: rg-eShopOnWeb-sywu #Replace NAME in RESOURCE-GROUP variable. It should be the same resource group created in previous steps.
+  LOCATION: eastus
   TEMPLATE-FILE: infra/webapp.bicep
-  SUBSCRIPTION-ID: YOUR-SUBS-ID
-  WEBAPP-NAME: eshoponweb-webapp-NAME
+  SUBSCRIPTION-ID: 20fdf1d5-cdfb-45c6-8ace-aa968eed8870 # Replace YOUR-SUBS-ID in SUBSCRIPTION-ID.
+  WEBAPP-NAME: eshoponweb-webapp-sywu # Replace NAME in WEBAPP-NAME with some unique alias. It will be used to create a globally unique website using Azure App Service.
 
 
 jobs:
